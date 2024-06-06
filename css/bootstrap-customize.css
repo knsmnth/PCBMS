@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Oswald Regular";
+    src: url("../fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Oswald Light";
+    src: url("../fonts/Oswald-Light.ttf");
+}
+html {
+    overflow: -moz-scrollbars-vertical;
+}
+body {
+    margin-top: 70px;
+    font-family: "Oswald Regular";
+}
+
+.datepicker{
+    border-radius: 0 !important;
+    z-index: 1151 !important;
+}
+
+.main-page {
+    /*background-image: url("../img/bg.jpg");*/
+    background-color: rgba(28, 5, 8, 0.50);
+    height: 805px;
+}
+
+.btn, .well, .nav, .form-control {
+    border-radius: 2px;
+}
+
+.navbar-default {
+    background-color: #32d666;
+    border-bottom: 4px solid #00a900;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    -webkit-transition: all 0.10s ease-in-out;
+    -moz-transition: all 0.10s ease-in-out;
+    -ms-transition: all 0.10s ease-in-out;
+    -o-transition: all 0.10s ease-in-out;
+    color: #ffffff;
+    background-color: #00a900;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #00a900;
+}
+
+.form-control {
+    outline: none;
+    padding: 6px 0px 6px 6px;
+    border: 1px solid #00c600;
+}
+.form-control:focus{
+    border: 1px solid #007000;
+    -webkit-box-shadow: inset 0 0px 1px rgba(0,0,0,.075), 0 0 2px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 0px 1px rgba(0,0,0,.075), 0 0 2px rgba(102, 175, 233, .6);
+}
+
+.well {
+    border: transparent;
+    border-top: 4px solid #00a900;
+}
+
+.btn-primary {
+    background-color: #007000;
+    border: 1px solid #007000;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #00a900;
+    border: 1px solid #00a900;
+}
+
+.fa-navsize {
+    font-size: 18px;
+}
+
+.ss-list {
+    padding: 6px 10px;
+}
+
+.label-success {
+    background-color: #007000;
+    font-size: 11px;
+}
+
+.dtr-tbl > thead > tr > td,
+.dtr-tbl > tbody > tr > td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px;
+    font-size: 10px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    bottom: 0;
+    height: auto !important;
+}
