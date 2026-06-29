@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../model/UserDAO.php";
+include __DIR__ . "/../model/UserDAO.php";
 
 $username = $_POST["username"];
 $password = $_POST["password"];

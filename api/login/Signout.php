@@ -1,5 +1,5 @@
 <?php
-include "../model/ConnectionDAO.php";
+include __DIR__ . "/../model/ConnectionDAO.php";
 
 session_start();
 session_unset();

@@ -1,5 +1,5 @@
 <?php
-include "../headers/mgtheader.php";
+include __DIR__ . "/../headers/mgtheader.php";
 
 ?>
 
@@ -9,4 +9,4 @@ include "../headers/mgtheader.php";
     </div>
 </div>
 
-<?php include "../footers/footer.php"; ?>
+<?php include __DIR__ . "/../footers/footer.php"; ?>

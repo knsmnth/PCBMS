@@ -1,5 +1,5 @@
 <?php
-include "../model/ConnectionDAO.php";
+include __DIR__ . "/ConnectionDAO.php";
 
 class UserDAO extends ConnectionDAO
 {

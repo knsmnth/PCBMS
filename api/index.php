@@ -119,7 +119,7 @@
             </form>
         </div>
 
-        <?php include "footers/footer.php"; ?>
+        <?php include __DIR__ . "/footers/footer.php"; ?>
     </div>
 </body>
 
