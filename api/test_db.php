@@ -36,6 +36,23 @@ class TestConnection extends ConnectionDAO {
                     echo " - Table '$table': ERROR - " . $e->getMessage() . "\n";
                 }
             }
+
+            // Simulate query
+            echo "\nSimulating UserLogin Query for user 'admin':\n";
+            try {
+                $qry = "SELECT * FROM personnel E INNER JOIN users U ON U.empid = E.empid WHERE username=? and password=?";
+                $stmt = $dbh->prepare($qry);
+                $stmt->execute(['admin', 'adminpassword']);
+                $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                echo "Query found: " . count($rows) . " match(es)\n";
+                if (count($rows) > 0) {
+                    print_r($rows[0]);
+                } else {
+                    echo "No match found for 'admin' with 'adminpassword'\n";
+                }
+            } catch (PDOException $e) {
+                echo "Query error: " . $e->getMessage() . "\n";
+            }
             
         } catch (PDOException $e) {
             echo "ERROR: Connection failed!\n";
