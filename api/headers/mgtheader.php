@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
+session_save_path('/tmp');
 session_start();
 date_default_timezone_set('UTC');
 date_default_timezone_set("Asia/Manila");
