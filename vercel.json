@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.9.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/css/(.*)",
+      "dest": "/css/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/js/$1"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
+      "src": "/login/UserLogin.php",
+      "dest": "/api/login/UserLogin.php"
+    },
+    {
+      "src": "/login/Signout.php",
+      "dest": "/api/login/Signout.php"
+    },
+    {
+      "src": "/manage/index.php",
+      "dest": "/api/manage/index.php"
+    },
+    {
+      "src": "/manage",
+      "dest": "/api/manage/index.php"
+    },
+    {
+      "src": "/api/model/(.*)",
+      "status": 403,
+      "dest": "/"
+    },
+    {
+      "src": "/api/headers/(.*)",
+      "status": 403,
+      "dest": "/"
+    },
+    {
+      "src": "/api/footers/(.*)",
+      "status": 403,
+      "dest": "/"
+    },
+    {
+      "src": "/index.php",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "/",
+      "dest": "/api/index.php"
+    }
+  ]
+}
